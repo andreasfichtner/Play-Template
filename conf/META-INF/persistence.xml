@@ -1,0 +1,30 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+             
+    <persistence-unit name="defaultPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <non-jta-data-source>DefaultDS</non-jta-data-source>
+        <class>de.retterdesapok.betterrisk.client.gamecore.players.Player</class>
+        <class>de.retterdesapok.betterrisk.client.gamecore.lobby.Lobby</class>
+        <class>de.retterdesapok.betterrisk.client.gamecore.world.Country</class>
+        <class>de.retterdesapok.betterrisk.client.gamecore.GameState</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.units.Unit</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.world.Country</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.world.CountryState</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.world.Hexagon</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.world.World</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.Battle</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.actions.AttackAction</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.actions.MovementAction</class>
+		<class>de.retterdesapok.betterrisk.client.gamecore.actions.FinishTurnAction</class>
+		<class> de.retterdesapok.betterrisk.server.database.PlayerService</class>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+        </properties>
+        
+    </persistence-unit>
+</persistence>
