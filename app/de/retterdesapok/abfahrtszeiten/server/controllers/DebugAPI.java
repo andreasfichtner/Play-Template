@@ -1,4 +1,4 @@
-package de.retterdesapok.betterrisk.server.controllers;
+package de.retterdesapok.abfahrtszeiten.server.controllers;
 
 import javax.inject.Inject;
 
@@ -24,5 +24,11 @@ public class DebugAPI extends Controller {
 
         return ok("Testoutput");
     }
+
+	@Transactional
+	public Result newtest() {
+
+		return ok("awesome!");
+	}
 
 }

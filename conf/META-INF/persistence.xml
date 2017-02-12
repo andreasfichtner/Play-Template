@@ -6,20 +6,20 @@
     <persistence-unit name="defaultPersistenceUnit" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <non-jta-data-source>DefaultDS</non-jta-data-source>
-        <class>de.retterdesapok.betterrisk.client.gamecore.players.Player</class>
-        <class>de.retterdesapok.betterrisk.client.gamecore.lobby.Lobby</class>
-        <class>de.retterdesapok.betterrisk.client.gamecore.world.Country</class>
-        <class>de.retterdesapok.betterrisk.client.gamecore.GameState</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.units.Unit</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.world.Country</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.world.CountryState</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.world.Hexagon</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.world.World</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.Battle</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.actions.AttackAction</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.actions.MovementAction</class>
-		<class>de.retterdesapok.betterrisk.client.gamecore.actions.FinishTurnAction</class>
-		<class> de.retterdesapok.betterrisk.server.database.PlayerService</class>
+        <class>de.retterdesapok.abfahrtszeiten.client.gamecore.players.Player</class>
+        <class>de.retterdesapok.abfahrtszeiten.client.gamecore.lobby.Lobby</class>
+        <class>de.retterdesapok.abfahrtszeiten.client.gamecore.world.Country</class>
+        <class>de.retterdesapok.abfahrtszeiten.client.gamecore.GameState</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.units.Unit</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.world.Country</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.world.CountryState</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.world.Hexagon</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.world.World</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.Battle</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.actions.AttackAction</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.actions.MovementAction</class>
+		<class>de.retterdesapok.abfahrtszeiten.client.gamecore.actions.FinishTurnAction</class>
+		<class> de.retterdesapok.abfahrtszeiten.server.database.PlayerService</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>

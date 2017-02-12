@@ -3,4 +3,5 @@
 # ~~~~
 
 # Debug
-GET   /test		de.retterdesapok.betterrisk.server.controllers.DebugAPI.test
+GET   /test		de.retterdesapok.abfahrtszeiten.server.controllers.DebugAPI.test
+GET   /newtest		de.retterdesapok.abfahrtszeiten.server.controllers.DebugAPI.newtest
