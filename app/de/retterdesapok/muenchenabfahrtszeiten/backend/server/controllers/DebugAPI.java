@@ -1,4 +1,4 @@
-package de.retterdesapok.betterrisk.server.controllers;
+package de.retterdesapok.muenchenabfahrtszeiten.backend.server.controllers;
 
 import javax.inject.Inject;
 
@@ -10,16 +10,16 @@ import play.mvc.Result;
 
 public class DebugAPI extends Controller {
 	
-	JPAApi jpaApi;
+	//JPAApi jpaApi;
 	FormFactory formFactory;
 
 	@Inject
-	DebugAPI(JPAApi jpaApi, FormFactory formFactory) {
-		this.jpaApi = jpaApi;
+	DebugAPI(/*JPAApi jpaApi,*/ FormFactory formFactory) {
+		//this.jpaApi = jpaApi;
 		this.formFactory = formFactory;
 	}
 
-	@Transactional
+	//@Transactional
     public Result test() {
 
         return ok("Testoutput");
